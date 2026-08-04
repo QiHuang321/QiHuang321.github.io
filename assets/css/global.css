@@ -1,0 +1,76 @@
+@charset "utf-8";
+/* Adapted from https://github.com/luost26/academic-homepage (MIT) */
+
+body {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    padding-top: 5.0rem;
+    font-size: 1.20rem;
+}
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+    font-weight: 700;
+}
+
+.card {
+    border-radius: 0.8rem !important;
+}
+
+.rounded-xl {
+    border-radius: 0.8rem !important;
+}
+
+.text-profile-position {
+    font-weight: 400;
+    font-size: 1.15rem;
+}
+
+.text-profile-bio {
+    font-weight: 400;
+    font-size: 1.15rem;
+}
+
+.navbar {
+    opacity: 0.95;
+}
+
+.inline-badge {
+    height: 18px;
+    vertical-align: -10%;
+    margin-right: 4px;
+}
+
+.no-break {
+    white-space: nowrap;
+}
+
+.email-text {
+    font-family: Courier, monospace;
+}
+
+.badge-publication {
+    font-size: 82%;
+    font-weight: 600;
+    vertical-align: 10%;
+}
+
+.pub-index {
+    color: #adb5bd;
+    font-weight: 700;
+}
+
+.profile-links a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.profile-links a:hover,
+.profile-links a:focus {
+    color: #0056b3;
+    text-decoration: none;
+}
+
+footer {
+    font-size: 0.9rem;
+}

@@ -16,17 +16,18 @@ python3 -m http.server 8000
 
 ## 文件结构
 
+设计基于 [luost26/academic-homepage](https://github.com/luost26/academic-homepage) 模板（MIT），改为纯静态实现（无 Jekyll）。Bootstrap 4 / Font Awesome / 字体走 CDN。
+
 ```
 site/
 ├── index.html              # 唯一的页面，所有内容都在这里改
 ├── README.md
 └── assets/
-    ├── site.css            # 全部样式（含深/浅色主题变量）
-    ├── site.js             # 主题切换按钮逻辑
-    ├── fonts/              # 自托管字体（Fraunces + Source Serif 4，latin 子集）
+    ├── css/global.css      # 模板自定义样式
     ├── img/
     │   ├── portrait.jpg    # 首页人像（900×1200，由原图压缩而来）
-    │   └── favicon.svg
+    │   ├── favicon.png
+    │   └── badges/         # 学校/公司小徽标（18px 显示）
     └── file/
         └── Qi_Huang_CV.pdf # 「CV」按钮链接的简历
 ```
