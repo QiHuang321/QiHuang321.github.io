@@ -1,5 +1,7 @@
 # Qi Huang — 个人主页
 
+**线上地址：<https://qihuang321.github.io/>**（仓库 `QiHuang321/QiHuang321.github.io`，push 到 main 即自动发布）
+
 纯静态 HTML + CSS 的个人学术主页，无需任何构建工具。
 
 ## 本地预览
