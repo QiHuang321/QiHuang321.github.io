@@ -41,6 +41,14 @@ h1, h2, h3, h4, h5, h6,
     margin-right: 4px;
 }
 
+/* uniform org logos in Education / Experience lists */
+.org-badge {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
 .no-break {
     white-space: nowrap;
 }
