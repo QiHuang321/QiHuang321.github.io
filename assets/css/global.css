@@ -79,6 +79,34 @@ h1, h2, h3, h4, h5, h6,
     text-decoration: none;
 }
 
+/* News */
+.news-item {
+    display: flex;
+    align-items: flex-start;
+    padding: 0.5rem 0;
+}
+
+.news-item + .news-item {
+    border-top: 1px solid #f1f3f5;
+}
+
+.news-date {
+    flex-shrink: 0;
+    width: 6.6rem;
+    text-align: center;
+    background: #e7f1ff;
+    color: #0b5ed7;
+    font-size: 0.78rem;
+    font-weight: 700;
+    border-radius: 999px;
+    padding: 0.22rem 0;
+    margin: 0.3rem 1rem 0 0;
+}
+
+.news-text {
+    font-size: 1.05rem;
+}
+
 footer {
     font-size: 0.9rem;
 }
