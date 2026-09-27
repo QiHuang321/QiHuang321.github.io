@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow, noarchive">
+<title>Qi Huang · HKPFS Statement</title>
+<link rel="icon" href="../assets/img/favicon.png">
+<style>
+@font-face{font-family:"Newsreader";src:url(../assets/fonts/newsreader-roman.woff2) format("woff2");font-weight:400 600;font-style:normal;font-display:swap}
+:root{--bg:#f4f2eb;--ink:#1d1e19;--ink2:#45463e;--muted:#6b6b60;--rule:#d8d4c6;--moss:#2d5a3b;
+  --serif:"Newsreader",Georgia,"Songti SC","Noto Serif CJK SC",serif;
+  --sans:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"PingFang SC","Microsoft YaHei",sans-serif;color-scheme:light dark}
+@media (prefers-color-scheme:dark){:root{--bg:#121511;--ink:#e6e3d8;--ink2:#c2beb1;--muted:#9f9b8e;--rule:#2d322b;--moss:#98c6a2}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1.0625rem/1.65 var(--serif);-webkit-font-smoothing:antialiased}
+html[lang=en] [data-l=zh],html[lang=zh-Hans] [data-l=en]{display:none}
+a{color:var(--moss);text-underline-offset:.2em}
+.wrap{max-width:40rem;margin:0 auto;padding:2.5rem 1.25rem 3rem}
+.back{font:.875rem var(--sans)}
+h1{font-weight:500;font-size:1.75rem;line-height:1.25;margin:1.25rem 0 .4rem}
+.sub{font:.9375rem/1.6 var(--sans);color:var(--muted);margin:0 0 1.5rem}
+h2{font-weight:500;font-size:1.25rem;margin:2rem 0 .6rem;padding-top:1.25rem;border-top:1px solid var(--rule)}
+h2 small{font:.875rem var(--sans);color:var(--muted);margin-left:.5rem}
+p{margin:0 0 .9rem;color:var(--ink2)}
+</style>
+<script>
+(function(){var l;try{l=new URLSearchParams(location.search).get('lang')||localStorage.getItem('lang')}catch(e){}
+if(l!=='en'&&l!=='zh')l=/^zh/i.test(navigator.language||'')?'zh':'en';document.documentElement.lang=l==='zh'?'zh-Hans':'en'})();
+</script>
+<script src="statements.js"></script>
+</head>
+<body>
+<div class="wrap">
+  <a class="back" href="./"><span data-l="en">← Back</span><span data-l="zh">← 返回</span></a>
+  <h1>HKPFS Research Plan &amp; Vision Statement</h1>
+  <p class="sub"><span data-l="en">Qi Huang · submitted with my HKU application on 27 Sep 2026 (original English text).</span><span data-l="zh">黄骑 · 2026年9月27日随港大申请提交（英文原文）。</span></p>
+  <div id="s"><noscript><p>Please enable JavaScript to read the statement.</p></noscript></div>
+</div>
+<script>
+(function(){
+  var box=document.getElementById('s'),dec=new TextDecoder();
+  (window.HKPFS||[]).forEach(function(it,i){
+    var h=document.createElement('h2'),en=document.createElement('span'),zh=document.createElement('small');
+    en.textContent=(i+1)+'. '+it.en;zh.textContent=it.zh;h.appendChild(en);h.appendChild(zh);box.appendChild(h);
+    var txt=dec.decode(Uint8Array.from(atob(it.b),function(c){return c.charCodeAt(0)}));
+    txt.split(/\n\s*\n/).forEach(function(par){
+      par.split('\n').forEach(function(line,j,arr){
+        if(!line.trim())return;var p=document.createElement('p');p.textContent=line;box.appendChild(p);
+      });
+    });
+  });
+})();
+</script>
+</body>
+</html>
