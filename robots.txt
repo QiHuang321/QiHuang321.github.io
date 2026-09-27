@@ -1,3 +1,4 @@
 User-agent: *
 Allow: /
+Disallow: /phd-2027/
 Sitemap: https://qihuang.me/sitemap.xml
