@@ -33,6 +33,7 @@ site/
     │   ├── portrait-300.jpg
     │   ├── portrait-{200,300,400,600}.avif  # 现代浏览器实际加载的人像
     │   ├── share.jpg               # 1200×630 社交分享预览图（微信/LinkedIn/Slack 等链接卡片）
+    │   ├── fitness/                # Outside of Research 相册的四张活动照片
     │   └── favicon.png / apple-touch-icon.png
     └── file/
         └── Qi_Huang_CV.pdf         # 「CV」按钮链接的简历
@@ -83,7 +84,8 @@ site/
 - 每次更新内容后，顺手改一下页脚的 "Last updated"、`index.html` 里 JSON-LD 的 `dateModified`，以及 `sitemap.xml` 的 `<lastmod>`。
 - **Research 区块的时间条**（右侧细线，所有项目共用同一刻度）：每个项目的 `<div class="tr" style="--a:2;--b:13">` 里，`--a`/`--b` 是起止月份，从 2025 年 9 月 = 0 开始数，13 = 2026 年 9 月底；进行中的项目加 `on`（末端显示箭头）。以后要把刻度往后延（比如到 2027 年），改 CSS 里 `#research{--n:13;--tick:4}` 这一处（`--n` 是刻度终点，`--tick` 是 2026 年 1 月那条刻度线），并同步改刻度文字 `Sep 2026`。
 - **项目详情**：每个项目下的「Details」是原生 `<details>` 折叠块，直接改里面的 `<li>` 文字即可。
+- **生活相册**：`#outside-research` 使用 `assets/img/fitness/` 中的照片；`--focus` 控制缩略图取景，点击后显示完整照片。支持方向键切换、Esc 关闭，以及无 JavaScript 时直接打开图片。新增照片时同步填写图片尺寸、替代文字和图注。
 - **配色**：所有颜色都是 `index.html` 顶部 `:root` 里的变量（浅色/深色两套），深色那套写了两遍（跟随系统 + 手动切换），改的时候两处一起改。页脚的 System / Light / Dark 切换会记在浏览器里。
-- **打印**：浏览器直接打印（Cmd/Ctrl+P）会得到一页纸的简版主页（隐藏导航、News 和折叠详情）。内容变多后如果超过一页，调整 `index.html` 里 `@media print` 那一段的字号/间距。
+- **打印**：浏览器直接打印（Cmd/Ctrl+P）会得到简版主页（隐藏导航、News、折叠详情和生活相册）。内容变多后如果超过一页，调整 `index.html` 里 `@media print` 那一段的字号/间距。
 - **分享预览图** `share.jpg`：名字、头衔或研究方向改了的话需要重做一张 1200×630 的图（同名覆盖即可）。
 - **字体**：只包含英文字符。名字下方的中文名「黄骑」使用系统自带的宋体显示，无需额外字体文件。
