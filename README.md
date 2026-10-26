@@ -12,19 +12,24 @@ python3 -m http.server 8000
 # 打开 http://localhost:8000
 ```
 
-（直接双击 `index.html` 也能看，但字体等相对路径资源经由本地服务器加载更接近线上效果。）
+请从 `site/` 启动本地服务器，使 `/personal/` 和共享资源的根路径链接与线上保持一致。
 
 ## 文件结构
 
-纯手写 HTML，CSS 内联在 `index.html` 里，无任何框架、无第三方 CDN（字体、图标、图片全部本地托管），首屏只需一个 HTML 请求。SEO 相关的标题、描述、结构化数据（JSON-LD）都在 `index.html` 的 `<head>` 里。
+纯手写 HTML，无任何框架、无第三方 CDN（字体、图标、图片全部本地托管）。学术主页与个人生活页面共用基础样式和主题切换脚本，各页专用样式内联在各自 HTML 中。SEO 相关的标题、描述、结构化数据（JSON-LD）位于各页面的 `<head>`。
 
 ```
 site/
-├── index.html              # 唯一的页面，所有内容、样式和一小段脚本都在这里改
+├── index.html              # 学术主页：简介、研究、论文、动态和经历
+├── personal/index.html     # /personal/：Outside of Research 独立页面及照片图注
 ├── 404.html                # 404 页面（GitHub Pages 自动使用）
 ├── README.md
 ├── robots.txt / sitemap.xml
 └── assets/
+    ├── css/site.css                # 两个页面共用的字体、配色、导航和页脚
+    ├── js/
+    │   ├── theme.js                # 两个页面共用的主题切换
+    │   └── gallery.js              # 仅个人页面加载的大图浏览器
     ├── fonts/
     │   ├── newsreader-roman.woff2   # 正文+标题字体（Newsreader 可变字重 400–600，OFL 授权，已裁剪为拉丁字符子集）
     │   └── newsreader-italic.woff2  # 斜体（期刊名、注释等）
@@ -68,7 +73,7 @@ site/
 
 ## 日常维护
 
-- 改内容：直接编辑 `index.html`（研究、论文、经历各区块都有清晰注释），然后 `git add -A && git commit -m "update" && git push`，一两分钟后生效。
+- 改内容：学术内容编辑 `index.html`，生活内容编辑 `personal/index.html`，然后 `git add -A && git commit -m "update" && git push`，一两分钟后生效。
 - 换简历：用新 PDF 覆盖 `assets/file/Qi_Huang_CV.pdf`。
 - 换照片：先把新图裁成 3:4（例如 `crop.png`），再用 ImageMagick 生成各尺寸（`brew install imagemagick`）：
 
@@ -81,11 +86,11 @@ site/
   magick crop.png -resize 300x -strip -quality 52 portrait-300.avif
   magick crop.png -resize 200x -strip -quality 54 portrait-200.avif
   ```
-- 每次更新内容后，顺手改一下页脚的 "Last updated"、`index.html` 里 JSON-LD 的 `dateModified`，以及 `sitemap.xml` 的 `<lastmod>`。
+- 每次更新内容后，同步对应页面的页脚 "Last updated"、JSON-LD 的 `dateModified`，以及 `sitemap.xml` 中该页面的 `<lastmod>`。
 - **Research 区块的时间条**（右侧细线，所有项目共用同一刻度）：每个项目的 `<div class="tr" style="--a:2;--b:13">` 里，`--a`/`--b` 是起止月份，从 2025 年 9 月 = 0 开始数，13 = 2026 年 9 月底；进行中的项目加 `on`（末端显示箭头）。以后要把刻度往后延（比如到 2027 年），改 CSS 里 `#research{--n:13;--tick:4}` 这一处（`--n` 是刻度终点，`--tick` 是 2026 年 1 月那条刻度线），并同步改刻度文字 `Sep 2026`。
 - **项目详情**：每个项目下的「Details」是原生 `<details>` 折叠块，直接改里面的 `<li>` 文字即可。
-- **生活相册**：`#outside-research` 使用 `assets/img/fitness/` 中的照片；`--focus` 控制缩略图取景，点击后显示完整照片。支持方向键切换、Esc 关闭，以及无 JavaScript 时直接打开图片。新增照片时同步填写图片尺寸、替代文字和图注。
-- **配色**：所有颜色都是 `index.html` 顶部 `:root` 里的变量（浅色/深色两套），深色那套写了两遍（跟随系统 + 手动切换），改的时候两处一起改。页脚的 System / Light / Dark 切换会记在浏览器里。
-- **打印**：浏览器直接打印（Cmd/Ctrl+P）会得到简版主页（隐藏导航、News、折叠详情和生活相册）。内容变多后如果超过一页，调整 `index.html` 里 `@media print` 那一段的字号/间距。
+- **生活相册**：位于 `/personal/`，使用 `assets/img/fitness/` 中的照片；`--focus` 控制缩略图取景，点击后显示完整照片。支持方向键切换、Esc 关闭，以及无 JavaScript 时直接打开图片。新增照片时同步填写图片尺寸、替代文字和图注。主页导航 Personal 和简介 powerlifting 都通向此页；旧链接 `/#outside-research` 会自动跳转，无 JavaScript 时落到简介入口。
+- **配色**：颜色变量集中在 `assets/css/site.css` 的 `:root` 中（浅色/深色两套），深色那套写了两遍（跟随系统 + 手动切换），改的时候两处一起改。页脚的 System / Light / Dark 选择会保存在浏览器里，在两个页面间保持一致。
+- **打印**：学术主页隐藏导航、News 和折叠详情；个人页面保留照片和图注，隐藏导航和大图浏览器。打印版样式分别位于两页的 `@media print` 中。
 - **分享预览图** `share.jpg`：名字、头衔或研究方向改了的话需要重做一张 1200×630 的图（同名覆盖即可）。
 - **字体**：只包含英文字符。名字下方的中文名「黄骑」使用系统自带的宋体显示，无需额外字体文件。

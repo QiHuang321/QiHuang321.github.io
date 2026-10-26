@@ -84,64 +84,10 @@
   ]
 }
 </script>
-<script>try{var t=localStorage.getItem("theme");if(t=="light"||t=="dark")document.documentElement.dataset.theme=t}catch(e){}</script>
+<script>(function(){function go(){if(location.hash==="#outside-research"||location.hash==="#outside-title")location.replace("/personal/")}addEventListener("hashchange",go);go()})();try{var t=localStorage.getItem("theme");if(t=="light"||t=="dark")document.documentElement.dataset.theme=t}catch(e){}</script>
 
+<link rel="stylesheet" href="/assets/css/site.css">
 <style>
-@font-face{font-family:"Newsreader";src:url(assets/fonts/newsreader-roman.woff2) format("woff2");font-weight:400 600;font-style:normal;font-display:swap}
-@font-face{font-family:"Newsreader";src:url(assets/fonts/newsreader-italic.woff2) format("woff2");font-weight:400;font-style:italic;font-display:swap}
-/* Georgia scaled to Newsreader's metrics so the font swap doesn't reflow text */
-@font-face{font-family:"Newsreader Fallback";src:local("Georgia");size-adjust:96.2%;ascent-override:76.4%;descent-override:27.5%;line-gap-override:0%}
-@font-face{font-family:"Newsreader Fallback";src:local("Georgia Italic"),local("Georgia-Italic");font-style:italic;size-adjust:89.4%;ascent-override:82.3%;descent-override:29.7%;line-gap-override:0%}
-
-/* Palette taken from the portrait: stone steps, moss, fallen leaves. Dark = the same forest at dusk. */
-:root{
-  --bg:#f4f2eb;--bg2:#ebe8de;--ink:#1d1e19;--ink2:#45463e;--muted:#65655a;--rule:#d8d4c6;--moss:#2d5a3b;--rust:#99472a;
-  --serif:"Newsreader","Newsreader Fallback",Georgia,"Songti SC","Noto Serif CJK SC",serif;
-  --sans:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"PingFang SC","Microsoft YaHei",sans-serif;
-  --hh:3.5rem;--label:9rem;--side:14.5rem;--gap:2.75rem;
-  color-scheme:light dark;
-}
-@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#121511;--bg2:#1a1e18;--ink:#e6e3d8;--ink2:#c2beb1;--muted:#9f9b8e;--rule:#2d322b;--moss:#98c6a2;--rust:#e3a07c}}
-:root[data-theme=dark]{--bg:#121511;--bg2:#1a1e18;--ink:#e6e3d8;--ink2:#c2beb1;--muted:#9f9b8e;--rule:#2d322b;--moss:#98c6a2;--rust:#e3a07c;color-scheme:dark}
-:root[data-theme=light]{color-scheme:light}
-@media (prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
-@media (prefers-reduced-motion:reduce){*,*::before,*::after{transition:none!important;animation:none!important}}
-
-*,*::before,*::after{box-sizing:border-box}
-body{margin:0;background:var(--bg);color:var(--ink);font:400 1.0625rem/1.6 var(--serif);-webkit-font-smoothing:antialiased;-webkit-text-size-adjust:100%;text-size-adjust:100%}
-h1,h2,h3,h4,p,ol,ul{margin:0}
-ol,ul{padding:0;list-style:none}
-img{display:block;max-width:100%;height:auto}
-strong{font-weight:600}
-a{color:var(--moss);text-decoration:underline 1px;text-decoration-color:color-mix(in srgb,currentColor 38%,transparent);text-underline-offset:.2em;transition:text-decoration-color .15s,color .15s}
-a:hover{text-decoration-color:currentColor}
-:focus-visible{outline:2px solid var(--moss);outline-offset:2px;border-radius:2px}
-::selection{background:color-mix(in srgb,var(--moss) 22%,transparent)}
-.wrap{max-width:70rem;margin:0 auto;padding:0 1.25rem}
-.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
-.skip{position:absolute;left:1rem;top:.5rem;z-index:20;padding:.6rem 1rem;background:var(--ink);color:var(--bg);font:.9375rem var(--sans);transform:translateY(-200%)}
-.skip:focus{transform:none}
-
-/* ---------- Header ---------- */
-.top{position:sticky;top:0;z-index:10;background:var(--bg);border-bottom:1px solid var(--rule)}
-.nav{display:flex;align-items:center;height:var(--hh)}
-.brand{font:500 1.1875rem/1 var(--serif);color:var(--ink);text-decoration:none;white-space:nowrap}
-.links{position:relative;margin-left:auto;height:100%}
-.links ul{display:flex;align-items:center;gap:1.5rem;height:100%;font:.9375rem/1 var(--sans);white-space:nowrap}
-.links a{display:flex;align-items:center;height:var(--hh);color:var(--muted);text-decoration:none}
-.links a:hover,.links a[aria-current]{color:var(--ink)}
-.links .cv{height:2.25rem;padding:0 .9rem;border:1px solid color-mix(in srgb,var(--moss) 50%,transparent);border-radius:99px;color:var(--moss)}
-.links .cv:hover{color:var(--moss);border-color:var(--moss)}
-.ind{position:absolute;left:0;bottom:-1px;width:1px;height:2px;background:var(--moss);transform-origin:0 0;opacity:0;pointer-events:none}
-.ind.glide{transition:transform .4s cubic-bezier(.3,.7,.2,1),opacity .2s}
-@media (max-width:47.99rem){
-  .brand{display:none}
-  .links{margin:0 -1.25rem;padding:0 1.25rem;flex:1;overflow-x:auto;scrollbar-width:none}
-  .links::-webkit-scrollbar{display:none}
-  .links ul{gap:1.25rem;justify-content:space-between;min-width:max-content}
-}
-@media (max-width:24.5rem){.links ul{gap:.8rem;font-size:.875rem}.links .cv{padding:0 .75rem}}
-
 /* ---------- Hero ---------- */
 .hero{display:grid;grid-template-columns:minmax(0,1fr) 7rem;grid-template-areas:"name pic" "role pic" "bio bio" "act act";column-gap:1.25rem;padding:2.25rem 0 3rem}
 .hero h1{grid-area:name;align-self:end;font:500 clamp(2.75rem,13vw,3.5rem)/.95 var(--serif);letter-spacing:-.022em}
@@ -166,8 +112,6 @@ a:hover{text-decoration-color:currentColor}
 .copy:hover{color:var(--ink);border-color:var(--muted)}
 .copy.ok{color:var(--moss);border-color:var(--moss)}
 @media (min-width:48rem){
-  .wrap{padding:0 2rem}
-  body{font-size:1.125rem}
   .hero{grid-template-columns:var(--label) minmax(0,1fr);grid-template-areas:"name name" ". role" "pic bio" "pic act";column-gap:var(--gap);padding:4.5rem 0 4rem}
   .hero h1{font-size:clamp(3.5rem,8vw,5.25rem)}
   .role{margin-top:1.1rem;font-size:.9375rem;padding-top:.15rem}
@@ -278,50 +222,12 @@ summary:hover{color:var(--ink)}
 .bg [id]{scroll-margin-top:calc(var(--hh) + 1.5rem)}
 @media (min-width:64rem){.bg .it{grid-template-areas:"h n" "b n"}.bg .n{margin:0;padding-top:.2rem}.bg .n span{display:block}.bg .n span+span::before{content:none}}
 
-/* ---------- Outside of research ---------- */
-.personal-intro{max-width:38rem;color:var(--ink2);text-wrap:pretty}
-.photo-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1.5rem 1.25rem;margin-top:1.5rem}
-.photo-grid figure{margin:0;min-width:0}
-.photo-link{position:relative;display:block;overflow:hidden;border-radius:3px;background:var(--bg2);text-decoration:none;cursor:zoom-in}
-.photo-link img{width:100%;aspect-ratio:4/3;object-fit:cover;object-position:var(--focus,50% 50%);transition:transform .25s}
-.photo-link:hover img{transform:scale(1.025)}
-.photo-link:focus-visible{outline-offset:4px}
-.photo-expand{position:absolute;right:.65rem;bottom:.65rem;display:grid;place-items:center;width:1.75rem;height:1.75rem;border-radius:50%;background:#121511c9;color:#fff;font:1rem/1 var(--sans);pointer-events:none}
-.photo-grid figcaption{margin-top:.5rem;color:var(--muted);font:.8125rem/1.45 var(--sans)}
-.photo-viewer{width:min(70rem,calc(100% - 2rem));max-width:none;max-height:calc(100vh - 2rem);max-height:calc(100dvh - 2rem);margin:auto;padding:1rem;border:1px solid var(--rule);border-radius:4px;background:var(--bg);color:var(--ink);overflow:auto}
-.photo-viewer[open]{display:flex;flex-direction:column;gap:.75rem}
-.photo-viewer::backdrop{background:#080b08d9}
-.photo-toolbar{display:flex;align-items:center;justify-content:space-between;gap:.75rem;font:.8125rem/1.4 var(--sans);color:var(--muted)}
-.photo-controls{display:flex;align-items:center;gap:.4rem}
-.photo-controls button{display:grid;place-items:center;min-width:2.75rem;min-height:2.75rem;padding:.4rem .7rem;border:1px solid var(--rule);border-radius:3px;background:var(--bg2);color:var(--ink);font:inherit;cursor:pointer}
-.photo-controls button:hover{border-color:var(--moss)}
-.photo-full{align-self:center;width:auto;max-width:100%;height:auto;max-height:calc(100vh - 10rem);max-height:calc(100dvh - 10rem);min-height:0;object-fit:contain}
-.photo-caption{color:var(--ink2);font:.875rem/1.5 var(--sans)}
-.photo-open{overflow:hidden}
-@media (max-width:28rem){.photo-grid{gap:1rem .75rem}.photo-grid figcaption{font-size:.75rem}.photo-viewer{width:calc(100% - 1rem);padding:.75rem}}
-
-/* ---------- Footer ---------- */
-.foot{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:1rem 2rem;padding:2rem 0 3rem;border-top:1px solid var(--rule);font:.8125rem/1.5 var(--sans);color:var(--muted)}
-.foot a{color:inherit}
-.foot p{margin:0}
-.nw{white-space:nowrap}
-.theme{display:inline-flex;margin:0;padding:.15rem;border:1px solid var(--rule);border-radius:99px}
-.theme[hidden]{display:none}
-.theme legend{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%)}
-.theme label{position:relative;display:block;cursor:pointer}
-.theme input{position:absolute;inset:0;width:100%;height:100%;margin:0;opacity:0;cursor:pointer}
-.theme span{display:flex;align-items:center;min-height:2.5rem;padding:0 .85rem;border-radius:99px;transition:background-color .15s,color .15s}
-.theme label:hover span{color:var(--ink)}
-.theme input:checked+span{background:var(--bg2);color:var(--ink)}
-.theme input:focus-visible+span{outline:2px solid var(--moss);outline-offset:-2px}
-@media (min-width:48rem){.theme span{min-height:2rem}}
-
 /* ---------- Print: a one-page profile ---------- */
 @media print{
   :root:not(#_){--bg:#fff;--bg2:#fff;--ink:#000;--ink2:#222;--muted:#555;--rule:#bbb;--moss:#2d5a3b;--rust:#99472a;--label:5.5rem;--side:16rem;--gap:1rem;color-scheme:light}
   @page{size:auto;margin:10mm 12mm}
   body{font-size:8.75pt;line-height:1.33}
-  .top,.skip,.copy,.theme,details,#news,#outside-research,.photo-viewer,.axis,.act li:nth-child(2),.foot p:last-child,.bg .b p+p{display:none!important}
+  .top,.skip,.copy,.theme,details,#news,.axis,.act li:nth-child(2),.foot p:last-child,.bg .b p+p{display:none!important}
   .wrap{max-width:none;padding:0}
   a{color:inherit;text-decoration:none}
   .hero{grid-template-columns:var(--label) minmax(0,1fr) 4.6rem;grid-template-areas:"name name pic" ". role pic" ". bio pic" ". act pic";column-gap:var(--gap);padding:0 0 .6rem}
@@ -358,11 +264,11 @@ summary:hover{color:var(--ink)}
 }
 </style>
 </head>
-<body>
+<body id="top">
 <a class="skip" href="#main">Skip to content</a>
 
 <header class="top">
-  <nav class="nav wrap" aria-label="Sections">
+  <nav class="nav wrap" aria-label="Main navigation">
     <a class="brand" href="#top">Qi Huang</a>
     <div class="links">
       <ul>
@@ -370,6 +276,7 @@ summary:hover{color:var(--ink)}
         <li><a href="#publications">Papers</a></li>
         <li><a href="#news">News</a></li>
         <li><a href="#background">Background</a></li>
+        <li><a href="/personal/">Personal</a></li>
         <li><a class="cv" href="assets/file/Qi_Huang_CV.pdf" target="_blank" rel="noopener">CV</a></li>
       </ul>
       <span class="ind" aria-hidden="true"></span>
@@ -401,7 +308,7 @@ summary:hover{color:var(--ink)}
       <p>
         Before Chicago, I received my B.Sc. in Mathematics from the University of Liverpool with
         First Class Honours, ranked <strong>top 1%</strong> in my major.
-        Outside of research, I&rsquo;m into <a href="#outside-research">powerlifting</a> 🏋️ and road trips 🚗.
+        Outside of research, I&rsquo;m into <a id="outside-research" href="/personal/">powerlifting</a> 🏋️ and road trips 🚗.
       </p>
     </div>
     <ul class="act">
@@ -635,59 +542,7 @@ summary:hover{color:var(--ink)}
     </div>
   </section>
 
-  <!-- ============ OUTSIDE OF RESEARCH ============ -->
-  <section id="outside-research" class="sec" aria-labelledby="outside-title">
-    <h2 id="outside-title">Outside of Research</h2>
-    <div>
-      <p class="personal-intro">Outside of research, I enjoy powerlifting, road trips, and connecting with the fitness community.</p>
-      <div class="photo-grid">
-        <figure>
-          <a class="photo-link" href="assets/img/fitness/community.jpg" target="_blank" rel="noopener" aria-label="View full photo: with Breon Ansley, The Black Swan">
-            <img src="assets/img/fitness/community.jpg" width="1080" height="1080" loading="lazy" decoding="async" style="--focus:50% 60%" alt="Qi Huang shaking hands with Breon Ansley at a fitness exhibition.">
-            <span class="photo-expand" aria-hidden="true">↗</span>
-          </a>
-          <figcaption>With Breon &ldquo;The Black Swan&rdquo; Ansley</figcaption>
-        </figure>
-        <figure>
-          <a class="photo-link" href="assets/img/fitness/meetup.jpg" target="_blank" rel="noopener" aria-label="View full photo: a moment at the expo">
-            <img src="assets/img/fitness/meetup.jpg" width="1706" height="1280" loading="lazy" decoding="async" alt="Two people posing for a close-up photo at an exhibition booth.">
-            <span class="photo-expand" aria-hidden="true">↗</span>
-          </a>
-          <figcaption>A moment at the expo</figcaption>
-        </figure>
-        <figure>
-          <a class="photo-link" href="assets/img/fitness/deadlift-display.jpg" target="_blank" rel="noopener" aria-label="View full photo: at the deadlift display">
-            <img src="assets/img/fitness/deadlift-display.jpg" width="1080" height="1920" loading="lazy" decoding="async" style="--focus:50% 76%" alt="Three attendees posing with a display barbell at a fitness exhibition.">
-            <span class="photo-expand" aria-hidden="true">↗</span>
-          </a>
-          <figcaption>At the deadlift display</figcaption>
-        </figure>
-        <figure>
-          <a class="photo-link" href="assets/img/fitness/exhibition.jpg" target="_blank" rel="noopener" aria-label="View full photo: at the expo with Ronnie Coleman">
-            <img src="assets/img/fitness/exhibition.jpg" width="1280" height="2740" loading="lazy" decoding="async" style="--focus:50% 60%" alt="Qi Huang at a fitness exhibition with Ronnie Coleman in the background.">
-            <span class="photo-expand" aria-hidden="true">↗</span>
-          </a>
-          <figcaption>At the expo with Ronnie Coleman</figcaption>
-        </figure>
-      </div>
-    </div>
-  </section>
-
 </main>
-
-<dialog class="photo-viewer" aria-labelledby="photo-viewer-title" aria-describedby="photo-caption">
-  <h2 class="sr" id="photo-viewer-title">Fitness event photos</h2>
-  <div class="photo-toolbar">
-    <span class="photo-position" aria-live="polite"></span>
-    <div class="photo-controls">
-      <button type="button" class="photo-prev" aria-label="Previous photo">←</button>
-      <button type="button" class="photo-next" aria-label="Next photo">→</button>
-      <button type="button" class="photo-close" autofocus>Close <span aria-hidden="true">×</span></button>
-    </div>
-  </div>
-  <img class="photo-full" alt="">
-  <p class="photo-caption" id="photo-caption"></p>
-</dialog>
 
 <footer class="wrap">
  <div class="foot">
@@ -702,6 +557,7 @@ summary:hover{color:var(--ink)}
  </div>
 </footer>
 
+<script src="/assets/js/theme.js"></script>
 <script>
 (function () {
   var d = document, root = d.documentElement;
@@ -743,77 +599,6 @@ summary:hover{color:var(--ink)}
         clearTimeout(timer);
         timer = setTimeout(function () { btn.textContent = 'Copy'; btn.classList.remove('ok'); status.textContent = ''; }, 2000);
       });
-    });
-  }
-
-  // Theme: system / light / dark, remembered across visits.
-  var form = d.querySelector('.theme'), metas = d.querySelectorAll('meta[name="theme-color"]');
-  function apply(v) {
-    if (v === 'system') delete root.dataset.theme; else root.dataset.theme = v;
-    metas.forEach(function (m, k) { m.content = v === 'system' ? ['#f4f2eb', '#121511'][k] : (v === 'dark' ? '#121511' : '#f4f2eb'); });
-  }
-  form.hidden = false;
-  var saved = root.dataset.theme || 'system';
-  form.querySelector('[value="' + saved + '"]').checked = true;
-  apply(saved);
-  form.addEventListener('change', function (e) {
-    apply(e.target.value);
-    try { if (e.target.value === 'system') localStorage.removeItem('theme'); else localStorage.setItem('theme', e.target.value); } catch (_) {}
-  });
-
-  // Native dialog provides a modal backdrop and Escape-to-close.
-  // Each thumbnail remains a direct image link when JavaScript is unavailable.
-  var viewer = d.querySelector('.photo-viewer');
-  if (viewer && typeof viewer.showModal === 'function') {
-    var photos = [].slice.call(d.querySelectorAll('.photo-link'));
-    var full = viewer.querySelector('.photo-full');
-    var caption = viewer.querySelector('.photo-caption');
-    var position = viewer.querySelector('.photo-position');
-    var photoIndex = 0, photoOpener;
-    function showPhoto(index) {
-      photoIndex = (index + photos.length) % photos.length;
-      var link = photos[photoIndex], thumb = link.querySelector('img');
-      full.src = link.href;
-      full.alt = thumb.alt;
-      caption.textContent = link.closest('figure').querySelector('figcaption').textContent;
-      position.textContent = 'Photo ' + (photoIndex + 1) + ' of ' + photos.length;
-    }
-    photos.forEach(function (link, index) {
-      link.addEventListener('click', function (e) {
-        if (e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
-        e.preventDefault();
-        photoOpener = link;
-        showPhoto(index);
-        viewer.showModal();
-        root.classList.add('photo-open');
-      });
-    });
-    viewer.querySelector('.photo-prev').addEventListener('click', function () { showPhoto(photoIndex - 1); });
-    viewer.querySelector('.photo-next').addEventListener('click', function () { showPhoto(photoIndex + 1); });
-    viewer.querySelector('.photo-close').addEventListener('click', function () { viewer.close(); });
-    viewer.addEventListener('keydown', function (e) {
-      if (e.key === 'Tab') {
-        var controls = viewer.querySelectorAll('.photo-controls button');
-        var first = controls[0], last = controls[controls.length - 1];
-        if (e.shiftKey && d.activeElement === first) {
-          e.preventDefault(); last.focus();
-        } else if (!e.shiftKey && d.activeElement === last) {
-          e.preventDefault(); first.focus();
-        }
-      }
-      if (e.key === 'ArrowLeft' || e.key === 'ArrowRight') {
-        e.preventDefault();
-        showPhoto(photoIndex + (e.key === 'ArrowLeft' ? -1 : 1));
-      }
-    });
-    viewer.addEventListener('click', function (e) {
-      if (e.target !== viewer) return;
-      var rect = viewer.getBoundingClientRect();
-      if (e.clientX < rect.left || e.clientX > rect.right || e.clientY < rect.top || e.clientY > rect.bottom) viewer.close();
-    });
-    viewer.addEventListener('close', function () {
-      root.classList.remove('photo-open');
-      if (photoOpener) photoOpener.focus({ preventScroll: true });
     });
   }
 })();
