@@ -41,7 +41,8 @@ site/
     │   ├── fitness/                # Outside of Research 相册的四张活动照片
     │   └── favicon.png / apple-touch-icon.png
     └── file/
-        └── Qi_Huang_CV.pdf         # 「CV」按钮链接的简历
+        ├── Qi_Huang_CV.pdf         # 「CV」按钮链接的简历
+        └── CAWN_meeting.pdf        # Causal inference working paper 的 Slides (PDF)
 ```
 
 ## 部署到 GitHub Pages（免费）
