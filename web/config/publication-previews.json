@@ -38,13 +38,5 @@
     "figureAlt": "Two rows of video-inpainting comparisons show a bus and a mountain scene, with masked inputs, baseline reconstructions, and PVI-DPO results; boxes mark boundaries and structural details.",
     "sourceLabel": "Figure 1 · p. 1",
     "sourceKind": "paper"
-  },
-  "pub-heart": {
-    "template": "basic",
-    "figure": "/assets/papers/heart.webp",
-    "figureCaption": "HEART uses complementary audio–visual routes to control adaptation strength.",
-    "figureAlt": "HEART pipeline: audio and visual inputs provide an anchor pseudo-label; complementary half-routes assess support; batch coverage and contrast set a gate that weights adaptation and permits a Self-Anchor fallback.",
-    "sourceLabel": "Figure 2 · p. 2",
-    "sourceKind": "paper"
   }
 }

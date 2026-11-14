@@ -295,33 +295,5 @@
     "links": [],
     "abstract": "Learns video-inpainting preferences by contrasting ground-truth clips with carefully selected model failures localized to the masked region. A region-aware, winner-safe DPO objective emphasizes masked regions and boundaries while protecting the preferred reconstruction.",
     "citation": "Jia Huang, Hongyou Zhou, Qi Huang, Hongbin Liu, Peng Zhang, Zhengqi Sun, Lumin Xu. PVI-DPO: Perceptual Video Inpainting via Informative-Safe Preference Mining and Region-Aware Direct Preference Optimization. AAAI 2027. Submitted."
-  },
-  {
-    "id": "pub-heart",
-    "title": "Half-routing Consistency Guidance with Batch-aware Gating for Audio-Visual Test-Time Adaptation",
-    "image": "/assets/papers/heart-thumb.webp",
-    "imageAlt": "HEART pipeline: audio and visual inputs provide an anchor pseudo-label; complementary half-routes assess support; batch coverage and contrast set a gate that weights adaptation and permits a Self-Anchor fallback.",
-    "authors": [
-      {
-        "text": "Qi Huang",
-        "strong": true
-      },
-      {
-        "text": ", "
-      },
-      {
-        "text": "Xiao Luo"
-      }
-    ],
-    "venue": "HEART",
-    "status": "Manuscript",
-    "group": "ml",
-    "tags": [
-      "Test-time adaptation",
-      "Audio–visual learning"
-    ],
-    "links": [],
-    "abstract": "Checks anchor pseudo-label reliability through complementary audio–visual half-routes. Batch support coverage and contrast control the adaptation weight, with a Self-Anchor fallback when route evidence is uninformative.",
-    "citation": "Qi Huang, Xiao Luo. Half-routing Consistency Guidance with Batch-aware Gating for Audio-Visual Test-Time Adaptation. HEART. Manuscript."
   }
 ]

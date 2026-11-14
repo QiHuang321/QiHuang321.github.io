@@ -237,52 +237,6 @@
         188.64
       ],
       "source_crop_format": "x, y, width, height in PDF points from the top-left corner"
-    },
-    {
-      "id": "heart",
-      "title": "Half-routing Consistency Guidance with Batch-aware Gating for Audio-Visual Test-Time Adaptation",
-      "source_pdf": "HEART.pdf",
-      "source_page": 2,
-      "source_kind": "manuscript figure",
-      "source_figure": "Figure 2",
-      "source_caption": "HEART mechanism overview. The paired target batch feeds the self-anchored update and the route-support check. Self-Anchor provides the confident pseudo-label. HEART checks whether two half-adapted routes predict this label, converts batch support statistics into s_t, and applies the weighted anchor objective.",
-      "display_caption": "HEART uses complementary audio–visual routes to control adaptation strength.",
-      "alt": "HEART pipeline: audio and visual inputs provide an anchor pseudo-label; complementary half-routes assess support; batch coverage and contrast set a gate that weights adaptation and permits a Self-Anchor fallback.",
-      "summary": "Checks anchor pseudo-label reliability through complementary audio–visual half-routes. Batch support coverage and contrast control the adaptation weight, with a Self-Anchor fallback when route evidence is uninformative.",
-      "summary_evidence": [
-        {
-          "source_pdf": "HEART.pdf",
-          "pages": [
-            1,
-            2
-          ],
-          "sections": [
-            "Abstract",
-            "Figure 2"
-          ]
-        }
-      ],
-      "caveats": [
-        "The manuscript contains conference-template metadata; no venue or acceptance claim is inferred from that template."
-      ],
-      "assets": {
-        "full": "heart.webp",
-        "thumbnail": "heart-thumb.webp",
-        "lossless_png": "heart.png",
-        "width": 1958,
-        "height": 676,
-        "full_bytes": 143280,
-        "thumbnail_bytes": 33792,
-        "render_dpi": 288
-      },
-      "visually_checked": true,
-      "source_crop_points": [
-        61.2,
-        80.64,
-        489.6,
-        169.2
-      ],
-      "source_crop_format": "x, y, width, height in PDF points from the top-left corner"
     }
   ]
 }
