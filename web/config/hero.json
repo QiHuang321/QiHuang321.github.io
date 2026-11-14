@@ -1,0 +1,39 @@
+{
+  "name": "Qi Huang",
+  "title": "The University of Chicago",
+  "profileImage": "/assets/img/portrait.jpg",
+  "descriptions": [
+    {
+      "icon": "sparkles",
+      "text": "Causal inference"
+    },
+    {
+      "icon": "openai",
+      "text": "LLMs & machine learning"
+    }
+  ],
+  "primaryLinks": [
+    {
+      "label": "Curriculum vitae",
+      "url": "/assets/file/Qi_Huang_CV.pdf",
+      "preview": "pdf"
+    }
+  ],
+  "socialLinks": [
+    {
+      "label": "Email",
+      "icon": "email",
+      "url": "mailto:qihuang@uchicago.edu"
+    },
+    {
+      "label": "GitHub",
+      "icon": "github",
+      "url": "https://github.com/QiHuang321"
+    },
+    {
+      "label": "LinkedIn",
+      "icon": "linkedin",
+      "url": "https://www.linkedin.com/in/qi-huang-8b84383b2/"
+    }
+  ]
+}

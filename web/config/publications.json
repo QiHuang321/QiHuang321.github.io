@@ -1,0 +1,327 @@
+[
+  {
+    "id": "pub-cawn",
+    "title": "Covariate-Adaptive Studentized Sensitivity Analysis for Neyman’s Weak Null in Matched Designs",
+    "image": "/assets/papers/cawn-thumb.webp",
+    "imageAlt": "A matched-set schematic with I sets of varying sizes, each containing one treated unit and the remaining control units.",
+    "authors": [
+      {
+        "text": "Qi Huang",
+        "strong": true
+      },
+      {
+        "text": ", "
+      },
+      {
+        "text": "Pengyun Wang"
+      },
+      {
+        "text": ", "
+      },
+      {
+        "text": "Xinran Li"
+      }
+    ],
+    "venue": "Working paper",
+    "status": "",
+    "group": "causal",
+    "tags": [
+      "Sensitivity analysis",
+      "Matched designs"
+    ],
+    "links": [
+      {
+        "label": "Slides",
+        "url": "/assets/file/CAWN_meeting.pdf"
+      }
+    ],
+    "abstract": "Develops covariate-adaptive sensitivity analysis for the sample-average treatment effect in matched observational studies. A closed-form lower-envelope statistic and studentization support asymptotically valid tests of Neyman’s weak null while allowing heterogeneous effects and unequal treatment probabilities within matched sets.",
+    "citation": "Qi Huang, Pengyun Wang, Xinran Li. Covariate-Adaptive Studentized Sensitivity Analysis for Neyman’s Weak Null in Matched Designs. Working paper."
+  },
+  {
+    "id": "pub-science",
+    "title": "Stronger Artificial Intelligence Breakthroughs Hasten Their Own Exhaustion",
+    "image": "/assets/papers/science-thumb.webp",
+    "imageAlt": "Six panels show the idea life cycle, new and dead idea shares, AlexNet and Transformer citation patterns, successive active-idea cycles, and simulated effects of reciprocal reviewing.",
+    "authors": [
+      {
+        "text": "Beichen Lu"
+      },
+      {
+        "text": ", "
+      },
+      {
+        "text": "Honglin Bao"
+      },
+      {
+        "text": ", "
+      },
+      {
+        "text": "Qi Huang",
+        "strong": true
+      },
+      {
+        "text": ", "
+      },
+      {
+        "text": "Qingguo Meng"
+      },
+      {
+        "text": ", "
+      },
+      {
+        "text": "James A. Evans"
+      }
+    ],
+    "venue": "Nature Machine Intelligence",
+    "status": "Submitted",
+    "group": "ml",
+    "tags": [
+      "Science of science",
+      "AI breakthroughs"
+    ],
+    "links": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2610.27296"
+      }
+    ],
+    "abstract": "Examines how major AI breakthroughs concentrate scientific attention and are followed by faster exhaustion of ideas. Analyses of publications and peer reviews, together with agent-based simulations, connect this pattern to declining diversity and the effects of reciprocal reviewing.",
+    "citation": "Beichen Lu, Honglin Bao, Qi Huang, Qingguo Meng, James A. Evans. Stronger Artificial Intelligence Breakthroughs Hasten Their Own Exhaustion. Nature Machine Intelligence. Submitted."
+  },
+  {
+    "id": "pub-qegf",
+    "title": "QEGF: A Quantum-Inspired Geometric and Energy-Based Fusion Framework for Multimodal Sentiment Analysis",
+    "image": "/assets/papers/qegf-thumb.webp",
+    "imageAlt": "QEGF architecture showing audio, text and video encoding, quantum-inspired geometric fusion, a task-adaptive transformer, energy-based uncertainty modeling, and uncertainty-guided prediction.",
+    "authors": [
+      {
+        "text": "Yuxuan Hu"
+      },
+      {
+        "text": ", "
+      },
+      {
+        "text": "Yushan Pan"
+      },
+      {
+        "text": ", "
+      },
+      {
+        "text": "Minghui Zhu"
+      },
+      {
+        "text": ", "
+      },
+      {
+        "text": "Xiaojiang He"
+      },
+      {
+        "text": ", "
+      },
+      {
+        "text": "Nan Xiang"
+      },
+      {
+        "text": ", "
+      },
+      {
+        "text": "Qi Huang",
+        "strong": true
+      },
+      {
+        "text": ", "
+      },
+      {
+        "text": "Ruizhi Ning"
+      },
+      {
+        "text": ", "
+      },
+      {
+        "text": "Yanlong Cao"
+      },
+      {
+        "text": ", "
+      },
+      {
+        "text": "Zhijie Xu"
+      }
+    ],
+    "venue": "TPAMI",
+    "status": "Early Access · 2026",
+    "group": "ml",
+    "tags": [
+      "Multimodal learning",
+      "Sentiment analysis"
+    ],
+    "links": [
+      {
+        "label": "Paper",
+        "url": "https://ieeexplore.ieee.org/abstract/document/11749675"
+      },
+      {
+        "label": "DOI",
+        "url": "https://doi.org/10.1109/TPAMI.2026.3746701"
+      }
+    ],
+    "abstract": "Combines geometric multimodal fusion with energy-based uncertainty modeling for sentiment analysis. Trace-normalized symmetric positive-definite descriptors model second-order correlations, while task-adaptive refinement and uncertainty estimates support robust predictions.",
+    "citation": "Yuxuan Hu, Yushan Pan, Minghui Zhu, Xiaojiang He, Nan Xiang, Qi Huang, Ruizhi Ning, Yanlong Cao, Zhijie Xu. QEGF: A Quantum-Inspired Geometric and Energy-Based Fusion Framework for Multimodal Sentiment Analysis. TPAMI. Early Access · 2026."
+  },
+  {
+    "id": "pub-pooling",
+    "title": "A Comprehensive Graph Pooling Benchmark: Effectiveness, Robustness and Generalizability",
+    "image": "/assets/papers/pooling-thumb.webp",
+    "imageAlt": "Graph-pooling benchmark backbone: message passing transforms the input graph, pooling reduces it, and readout produces a graph-level feature for supervised prediction.",
+    "authors": [
+      {
+        "text": "Pengyun Wang"
+      },
+      {
+        "text": ", "
+      },
+      {
+        "text": "Junyu Luo"
+      },
+      {
+        "text": ", "
+      },
+      {
+        "text": "Yanxin Shen"
+      },
+      {
+        "text": ", "
+      },
+      {
+        "text": "Ming Zhang"
+      },
+      {
+        "text": ", "
+      },
+      {
+        "text": "Shaoen Qin"
+      },
+      {
+        "text": ", "
+      },
+      {
+        "text": "Hanwen Xing"
+      },
+      {
+        "text": ", "
+      },
+      {
+        "text": "Siyu Heng"
+      },
+      {
+        "text": ", "
+      },
+      {
+        "text": "Qi Huang",
+        "strong": true
+      },
+      {
+        "text": ", "
+      },
+      {
+        "text": "Xiao Luo"
+      }
+    ],
+    "venue": "TKDD",
+    "status": "Major revision",
+    "group": "ml",
+    "tags": [
+      "Graph learning",
+      "Benchmark"
+    ],
+    "links": [],
+    "abstract": "Benchmarks 17 graph pooling methods across 28 datasets under shared experimental settings. Evaluates effectiveness, robustness to perturbations and distribution shifts, generalizability, and computational efficiency.",
+    "citation": "Pengyun Wang, Junyu Luo, Yanxin Shen, Ming Zhang, Shaoen Qin, Hanwen Xing, Siyu Heng, Qi Huang, Xiao Luo. A Comprehensive Graph Pooling Benchmark: Effectiveness, Robustness and Generalizability. TKDD. Major revision."
+  },
+  {
+    "id": "pub-pvi-dpo",
+    "title": "PVI-DPO: Perceptual Video Inpainting via Informative-Safe Preference Mining and Region-Aware Direct Preference Optimization",
+    "image": "/assets/papers/pvi-dpo-thumb.webp",
+    "imageAlt": "Two rows of video-inpainting comparisons show a bus and a mountain scene, with masked inputs, baseline reconstructions, and PVI-DPO results; boxes mark boundaries and structural details.",
+    "authors": [
+      {
+        "text": "Jia Huang"
+      },
+      {
+        "text": ", "
+      },
+      {
+        "text": "Hongyou Zhou"
+      },
+      {
+        "text": ", "
+      },
+      {
+        "text": "Qi Huang",
+        "strong": true
+      },
+      {
+        "text": ", "
+      },
+      {
+        "text": "Hongbin Liu"
+      },
+      {
+        "text": ", "
+      },
+      {
+        "text": "Peng Zhang"
+      },
+      {
+        "text": ", "
+      },
+      {
+        "text": "Zhengqi Sun"
+      },
+      {
+        "text": ", "
+      },
+      {
+        "text": "Lumin Xu"
+      }
+    ],
+    "venue": "AAAI 2027",
+    "status": "Submitted",
+    "group": "ml",
+    "tags": [
+      "Video inpainting",
+      "Preference optimization"
+    ],
+    "links": [],
+    "abstract": "Learns video-inpainting preferences by contrasting ground-truth clips with carefully selected model failures localized to the masked region. A region-aware, winner-safe DPO objective emphasizes masked regions and boundaries while protecting the preferred reconstruction.",
+    "citation": "Jia Huang, Hongyou Zhou, Qi Huang, Hongbin Liu, Peng Zhang, Zhengqi Sun, Lumin Xu. PVI-DPO: Perceptual Video Inpainting via Informative-Safe Preference Mining and Region-Aware Direct Preference Optimization. AAAI 2027. Submitted."
+  },
+  {
+    "id": "pub-heart",
+    "title": "Half-routing Consistency Guidance with Batch-aware Gating for Audio-Visual Test-Time Adaptation",
+    "image": "/assets/papers/heart-thumb.webp",
+    "imageAlt": "HEART pipeline: audio and visual inputs provide an anchor pseudo-label; complementary half-routes assess support; batch coverage and contrast set a gate that weights adaptation and permits a Self-Anchor fallback.",
+    "authors": [
+      {
+        "text": "Qi Huang",
+        "strong": true
+      },
+      {
+        "text": ", "
+      },
+      {
+        "text": "Xiao Luo"
+      }
+    ],
+    "venue": "HEART",
+    "status": "Manuscript",
+    "group": "ml",
+    "tags": [
+      "Test-time adaptation",
+      "Audio–visual learning"
+    ],
+    "links": [],
+    "abstract": "Checks anchor pseudo-label reliability through complementary audio–visual half-routes. Batch support coverage and contrast control the adaptation weight, with a Self-Anchor fallback when route evidence is uninformative.",
+    "citation": "Qi Huang, Xiao Luo. Half-routing Consistency Guidance with Batch-aware Gating for Audio-Visual Test-Time Adaptation. HEART. Manuscript."
+  }
+]

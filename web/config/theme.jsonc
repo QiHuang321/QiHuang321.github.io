@@ -1,0 +1,14 @@
+{
+  "--theme-color": "var(--accent)",
+  "--theme-text-color": "var(--accent)",
+  "--theme-color-hover": "var(--accent)",
+  "--theme-color-soft": "var(--muted)",
+  "--theme-color-pale": "var(--line)",
+  "--theme-color-border": "var(--line)",
+  "--theme-color-surface": "var(--surface)",
+  "--theme-color-surface-soft": "var(--surface-soft)",
+  "--theme-color-surface-strong": "var(--surface-soft)",
+  "--theme-color-translucent": "var(--line)",
+  "--theme-action-color": "var(--accent)",
+  "--theme-action-hover": "var(--accent)"
+}

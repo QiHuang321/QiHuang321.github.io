@@ -1,0 +1,13 @@
+{
+  "enabled": false,
+  "endpoint": "",
+  "limit": 3,
+  "cacheMinutes": 60,
+  "daily": {
+    "enabled": false,
+    "limit": 3,
+    "keywords": [
+      "causal inference"
+    ]
+  }
+}

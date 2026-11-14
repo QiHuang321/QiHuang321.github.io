@@ -1,0 +1,4 @@
+import research from "../../config/research.json";
+export default function Research() {
+  return <section id="research" aria-labelledby="research-heading"><h2 className="card-title" id="research-heading">Research experience</h2>{[["causal", "Causal inference", "causal"], ["ml", "LLMs & machine learning", "ml-science"]].map(([group, title, id]) => <div className={`research-group group-${group}`} key={group}><h3 className="group-title" id={id}>{title}</h3>{research.filter(item => item.group === group).map(item => <article className="research-item" key={item.title}><p className="research-period">{item.period}</p><h4>{item.title}</h4><p className="research-org">{item.organization}</p><p className="research-mentor" dangerouslySetInnerHTML={{ __html: item.mentorHtml }} /><p>{item.summary}</p><details><summary>Details</summary><ul dangerouslySetInnerHTML={{ __html: item.detailsHtml }} /></details></article>)}</div>)}</section>;
+}

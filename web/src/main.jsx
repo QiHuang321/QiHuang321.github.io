@@ -1,0 +1,10 @@
+import { StrictMode } from "react";
+import { createRoot, hydrateRoot } from "react-dom/client";
+import "./index.css";
+import App from "./App.jsx";
+import { applyTheme } from "./siteConfig.js";
+applyTheme();
+const root = document.getElementById("root");
+const app = <StrictMode><App personal={location.pathname.startsWith("/personal")} /></StrictMode>;
+if (root.querySelector(".App")) hydrateRoot(root, app);
+else createRoot(root).render(app);

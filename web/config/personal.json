@@ -1,0 +1,34 @@
+[
+  {
+    "image": "/assets/img/fitness/community.jpg",
+    "caption": "With Breon Ansley “The Black Swan”",
+    "alt": "Qi Huang shaking hands with Breon Ansley at a fitness exhibition.",
+    "position": "50% 60%",
+    "width": 1080,
+    "height": 1080
+  },
+  {
+    "image": "/assets/img/fitness/meetup.jpg",
+    "caption": "A moment at the expo",
+    "alt": "Qi Huang with a fellow attendee at a fitness expo.",
+    "position": "50% 50%",
+    "width": 1706,
+    "height": 1280
+  },
+  {
+    "image": "/assets/img/fitness/deadlift-display.jpg",
+    "caption": "505 kg deadlift with my two friends",
+    "alt": "Qi Huang and two friends posing together at a 505 kg deadlift display.",
+    "position": "50% 76%",
+    "width": 1080,
+    "height": 1920
+  },
+  {
+    "image": "/assets/img/fitness/exhibition.jpg",
+    "caption": "At the expo with Ronnie Coleman",
+    "alt": "Qi Huang at a fitness expo with Ronnie Coleman in the background.",
+    "position": "50% 60%",
+    "width": 1280,
+    "height": 2740
+  }
+]

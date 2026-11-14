@@ -1,0 +1,75 @@
+{
+  "paragraphs": [
+    [
+      {
+        "text": "I am an M.Sc. student in "
+      },
+      {
+        "text": "Computational and Applied Mathematics",
+        "strong": true
+      },
+      {
+        "text": " at the University of Chicago. My research focuses on "
+      },
+      {
+        "text": "causal inference",
+        "href": "#causal"
+      },
+      {
+        "text": " and "
+      },
+      {
+        "text": "LLMs and machine learning",
+        "href": "#ml-science"
+      },
+      {
+        "text": "."
+      }
+    ],
+    [
+      {
+        "text": "I am fortunate to work with "
+      },
+      {
+        "text": "Prof. Xinran Li",
+        "href": "https://sites.google.com/view/xinranli"
+      },
+      {
+        "text": " at the University of Chicago, "
+      },
+      {
+        "text": "Prof. Zhuang Liu",
+        "href": "https://liuzhuang13.github.io/"
+      },
+      {
+        "text": " at Princeton University, and "
+      },
+      {
+        "text": "Prof. Xiao Luo",
+        "href": "https://luoxiao12.github.io/"
+      },
+      {
+        "text": " at UW–Madison."
+      }
+    ],
+    [
+      {
+        "text": "Previously, I received my B.Sc. in Mathematics from the University of Liverpool with First Class Honours, ranked "
+      },
+      {
+        "text": "top 1%",
+        "strong": true
+      },
+      {
+        "text": " in my major. Outside research, I enjoy "
+      },
+      {
+        "text": "powerlifting and road trips",
+        "href": "/personal/"
+      },
+      {
+        "text": "."
+      }
+    ]
+  ]
+}

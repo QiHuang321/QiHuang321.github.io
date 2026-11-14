@@ -1,0 +1,26 @@
+[
+  {
+    "organization": "iFLYTEK",
+    "role": "Machine Learning Research Intern",
+    "period": "Jun 2025 – Sep 2025",
+    "location": "Hefei, China",
+    "details": [
+      {
+        "label": "Language & speech.",
+        "text": "Trained Transformer baselines on text (BLEU 27.6 to 29.9) and Conformer baselines on speech (WER 10.3% to 8.9%)."
+      }
+    ]
+  },
+  {
+    "organization": "Alibaba Group",
+    "role": "Data Analyst Intern",
+    "period": "Jul 2024 – Aug 2024",
+    "location": "Hangzhou, China",
+    "details": [
+      {
+        "label": "Consumer analytics.",
+        "text": "AARRR metrics and RFM-based segmentation for retention analysis and precision marketing."
+      }
+    ]
+  }
+]

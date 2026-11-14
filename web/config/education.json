@@ -1,0 +1,27 @@
+{
+  "enabled": true,
+  "items": [
+    {
+      "institution": "The University of Chicago",
+      "degree": "M.Sc.",
+      "field": "Computational and Applied Mathematics",
+      "period": "Sep 2025 – Jun 2027",
+      "location": "Chicago, US"
+    },
+    {
+      "institution": "The University of Liverpool",
+      "degree": "B.Sc.",
+      "field": "Mathematics",
+      "description": "First Class Honours · top 1%",
+      "period": "Sep 2023 – Jun 2025",
+      "location": "Liverpool, UK"
+    },
+    {
+      "institution": "Xi’an Jiaotong-Liverpool University",
+      "degree": "B.Sc.",
+      "field": "Applied Mathematics",
+      "period": "Sep 2021 – Jul 2023",
+      "location": "Suzhou, China"
+    }
+  ]
+}

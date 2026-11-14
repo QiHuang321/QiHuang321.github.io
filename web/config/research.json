@@ -1,0 +1,38 @@
+[
+  {
+    "title": "Sensitivity analysis for matched observational studies",
+    "group": "causal",
+    "period": "Nov 2025 – present",
+    "organization": "Department of Statistics, University of Chicago",
+    "mentorHtml": "Mentor: <a href=\"https://sites.google.com/view/xinranli\" target=\"_blank\" rel=\"noopener\">Prof.&nbsp;Xinran Li</a>",
+    "summary": "Working with Prof. Xinran Li on how residual propensity-score differences and hidden bias affect causal inference in matched observational studies.",
+    "detailsHtml": "\n              <li>Develops a covariate-adaptive, studentized sensitivity analysis for Neyman&rsquo;s weak null, allowing heterogeneous treatment effects in matched pairs and full matching.</li>\n              <li>Uses bounded perturbations of baseline propensity odds to construct a Horvitz&ndash;Thompson lower envelope. Validity is conditional on the within-set assignment law, with additional endpoint-coverage or rate conditions for estimated propensities.</li>\n              <li>Studies balanced comparison weights and their design sensitivity under a specified favorable model. <a href=\"#pub-cawn\">Working paper</a>.</li>\n            "
+  },
+  {
+    "title": "Scientific world models & LLM agents",
+    "group": "ml",
+    "period": "Mar 2026 – present",
+    "organization": "Zhuang Lab, Department of Computer Science, Princeton University",
+    "mentorHtml": "Mentor: <a href=\"https://liuzhuang13.github.io/\" target=\"_blank\" rel=\"noopener\">Prof.&nbsp;Zhuang Liu</a>",
+    "summary": "Developing evidence-grounded decision support for autonomous research agents.",
+    "detailsHtml": "\n              <li>Combines research context with retrieved literature and experimental records to compare candidate actions, allowing ties or abstention when the evidence is insufficient.</li>\n              <li>Explores integration into autonomous research workflows to guide experiment selection and branch expansion, with evaluation against observed experimental outcomes.</li>\n            "
+  },
+  {
+    "title": "Computational social science",
+    "group": "ml",
+    "period": "Sep 2025 – Jul 2026",
+    "organization": "Knowledge Lab, University of Chicago",
+    "mentorHtml": "Mentor: <a href=\"https://sociology.uchicago.edu/directory/james-evans\" target=\"_blank\" rel=\"noopener\">Prof.&nbsp;James A. Evans</a>",
+    "summary": "Co-designed and implemented agent-based simulations for a study of AI breakthroughs, scientific attention, and intellectual diversity.",
+    "detailsHtml": "\n              <li>The study analyzes 7,180,635 computer-science papers, 73,089 peer reviews, and topic shifts among 3,707,765 researchers across 36 years.</li>\n              <li>Stylized simulations examine how reviewer assignments tied to submission load can concentrate accepted topics and reduce diversity among accepted authors.</li>\n              <li>Co-authored the resulting manuscript, <a href=\"#pub-science\">submitted to <i>Nature Machine Intelligence</i></a>; <a href=\"https://arxiv.org/abs/2610.27296\" target=\"_blank\" rel=\"noopener\">preprint available on arXiv</a>.</li>\n            "
+  },
+  {
+    "title": "Audio-visual test-time adaptation",
+    "group": "ml",
+    "period": "Sep 2025 – Jun 2026",
+    "organization": "Department of Statistics, University of Wisconsin–Madison",
+    "mentorHtml": "Mentor: <a href=\"https://luoxiao12.github.io/\" target=\"_blank\" rel=\"noopener\">Prof.&nbsp;Xiao Luo</a>",
+    "summary": "HEART checks pseudo-label reliability through complementary audio–visual routes before adapting to an unlabeled target stream.",
+    "detailsHtml": "\n              <li>Two half-routes combine source audio with adapted video, and adapted audio with source video; agreement with the anchor pseudo-label supplies a detached reliability signal.</li>\n              <li>A batch gate based on support coverage and contrast downweights unsupported samples. When batch evidence is uninformative, the update recovers the Self-Anchor objective.</li>\n              <li>On AVRobustBench at severity 5, mean accuracy improves from 46.98% to 48.90% over Self-Anchor on VGGSound-2C, while remaining similar on KS32-2C (65.73% to 65.75%).</li>\n            "
+  }
+]

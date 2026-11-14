@@ -1,0 +1,2 @@
+.card-title{font:500 1.85rem/1.2 "Newsreader Variable",Georgia,serif;letter-spacing:-.03em;margin-bottom:28px;color:var(--text)}.group-title{font-size:.72rem;text-transform:uppercase;letter-spacing:.085em;font-weight:650;color:var(--accent);display:flex;align-items:center;gap:9px;margin:25px 0 4px}.group-title:before{content:"";width:5px;height:5px;border-radius:50%;background:currentColor}.group-ml>.group-title{color:var(--blue)}
+@media(max-width:760px){.card-title{font-size:1.65rem;margin-bottom:22px}}

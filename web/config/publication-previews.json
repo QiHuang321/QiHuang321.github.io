@@ -1,0 +1,50 @@
+{
+  "pub-cawn": {
+    "template": "basic",
+    "figure": "/assets/papers/cawn.webp",
+    "figureCaption": "Matched-set structure, from the CAWN presentation slides.",
+    "figureAlt": "A matched-set schematic with I sets of varying sizes, each containing one treated unit and the remaining control units.",
+    "sourceLabel": "CAWN slides · p. 2",
+    "sourceKind": "slides"
+  },
+  "pub-science": {
+    "template": "basic",
+    "figure": "/assets/papers/science.webp",
+    "figureCaption": "Cycles of idea creation and exhaustion following major AI breakthroughs.",
+    "figureAlt": "Six panels show the idea life cycle, new and dead idea shares, AlexNet and Transformer citation patterns, successive active-idea cycles, and simulated effects of reciprocal reviewing.",
+    "sourceLabel": "Figure 2 · p. 16",
+    "sourceKind": "paper"
+  },
+  "pub-qegf": {
+    "template": "basic",
+    "figure": "/assets/papers/qegf.webp",
+    "figureCaption": "QEGF combines geometric multimodal fusion with energy-based uncertainty modeling.",
+    "figureAlt": "QEGF architecture showing audio, text and video encoding, quantum-inspired geometric fusion, a task-adaptive transformer, energy-based uncertainty modeling, and uncertainty-guided prediction.",
+    "sourceLabel": "Figure 1 · p. 3",
+    "sourceKind": "paper"
+  },
+  "pub-pooling": {
+    "template": "basic",
+    "figure": "/assets/papers/pooling.webp",
+    "figureCaption": "Shared hierarchical backbone used in the graph-pooling benchmark.",
+    "figureAlt": "Graph-pooling benchmark backbone: message passing transforms the input graph, pooling reduces it, and readout produces a graph-level feature for supervised prediction.",
+    "sourceLabel": "Figure 1 · p. 3",
+    "sourceKind": "paper"
+  },
+  "pub-pvi-dpo": {
+    "template": "basic",
+    "figure": "/assets/papers/pvi-dpo.webp",
+    "figureCaption": "Background-restoration comparisons against FloED and VideoPainter.",
+    "figureAlt": "Two rows of video-inpainting comparisons show a bus and a mountain scene, with masked inputs, baseline reconstructions, and PVI-DPO results; boxes mark boundaries and structural details.",
+    "sourceLabel": "Figure 1 · p. 1",
+    "sourceKind": "paper"
+  },
+  "pub-heart": {
+    "template": "basic",
+    "figure": "/assets/papers/heart.webp",
+    "figureCaption": "HEART uses complementary audio–visual routes to control adaptation strength.",
+    "figureAlt": "HEART pipeline: audio and visual inputs provide an anchor pseudo-label; complementary half-routes assess support; batch coverage and contrast set a gate that weights adaptation and permits a Self-Anchor fallback.",
+    "sourceLabel": "Figure 2 · p. 2",
+    "sourceKind": "paper"
+  }
+}
