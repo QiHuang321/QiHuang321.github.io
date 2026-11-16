@@ -28,8 +28,10 @@ h1{font-weight:500;font-size:2rem;line-height:1.2;margin:0 0 .6rem}
 .lead2{color:var(--ink2);font-size:1.125rem;margin:0 0 2rem}
 .due{font-weight:600;color:var(--ink)}
 .wip{font-weight:600;color:var(--amber)}
+.ddl{display:flex;align-items:baseline;justify-content:space-between;gap:1rem;font:600 1.0625rem/1.4 var(--sans);color:var(--ink);margin:2.2rem 0 .8rem;padding-bottom:.4rem;border-bottom:2px solid var(--ink)}
+.ddl .n{font-weight:400;font-size:.875rem;color:var(--muted)}
 .school{background:var(--card);border:1px solid var(--rule);border-radius:10px;padding:1.25rem 1.4rem;margin-bottom:1.1rem}
-.school h2{font-weight:500;font-size:1.3rem;line-height:1.3;margin:0}
+.school h3{font-weight:500;font-size:1.3rem;line-height:1.3;margin:0}
 .prog{margin:.2rem 0 .9rem;color:var(--ink2)}
 dl{display:grid;grid-template-columns:auto 1fr;gap:.35rem 1rem;margin:0 0 1rem;font:.9375rem/1.5 var(--sans)}
 dt{color:var(--muted)}
@@ -63,8 +65,10 @@ if(l!=='en'&&l!=='zh')l=/^zh/i.test(navigator.language||'')?'zh':'en';document.d
   <p class="lead"><span data-l="en">Thank you so much for your support and help!!</span><span data-l="zh">感谢老师们的支持和帮助！！</span></p>
   <p class="lead2"><span data-l="en">Below are the deadlines for the recommendation letters.</span><span data-l="zh">下面是推荐信的DDL</span></p>
 
+  <h2 class="ddl"><span><span data-l="en">DDL · 15 Nov 2026</span><span data-l="zh">DDL · 2026年11月15日</span></span><span class="n"><span data-l="en">1 programme</span><span data-l="zh">1 个项目</span></span></h2>
+
   <section class="school">
-    <h2><span data-l="en">National University of Singapore</span><span data-l="zh">新加坡国立大学（NUS）</span></h2>
+    <h3><span data-l="en">National University of Singapore</span><span data-l="zh">新加坡国立大学（NUS）</span></h3>
     <p class="prog"><span data-l="en">PhD in Statistics and Data Science · August 2027 intake</span><span data-l="zh">统计与数据科学博士 · 2027年8月入学</span></p>
     <dl>
       <dt><span data-l="en">Letter deadline</span><span data-l="zh">推荐信截止</span></dt>
@@ -82,8 +86,10 @@ if(l!=='en'&&l!=='zh')l=/^zh/i.test(navigator.language||'')?'zh':'en';document.d
     </ul>
   </section>
 
+  <h2 class="ddl"><span><span data-l="en">DDL · 30 Nov 2026</span><span data-l="zh">DDL · 2026年11月30日</span></span><span class="n"><span data-l="en">1 programme</span><span data-l="zh">1 个项目</span></span></h2>
+
   <section class="school">
-    <h2><span data-l="en">Tsinghua University</span><span data-l="zh">清华大学</span></h2>
+    <h3><span data-l="en">Tsinghua University</span><span data-l="zh">清华大学</span></h3>
     <p class="prog"><span data-l="en">PhD in Computer Science and Technology, Institute for Interdisciplinary Information Sciences (IIIS) · Fall 2027 intake</span><span data-l="zh">交叉信息研究院（IIIS）计算机科学与技术博士 · 2027年秋季入学</span></p>
     <dl>
       <dt><span data-l="en">Letter deadline</span><span data-l="zh">推荐信截止</span></dt>
@@ -99,8 +105,10 @@ if(l!=='en'&&l!=='zh')l=/^zh/i.test(navigator.language||'')?'zh':'en';document.d
     </ul>
   </section>
 
+  <h2 class="ddl"><span><span data-l="en">DDL · 1 Dec 2026</span><span data-l="zh">DDL · 2026年12月1日</span></span><span class="n"><span data-l="en">7 programmes</span><span data-l="zh">7 个项目</span></span></h2>
+
   <section class="school">
-    <h2><span data-l="en">The University of Hong Kong</span><span data-l="zh">香港大学（HKU）</span></h2>
+    <h3><span data-l="en">The University of Hong Kong</span><span data-l="zh">香港大学（HKU）</span></h3>
     <p class="prog"><span data-l="en">PhD in Innovation and Information Management, HKU Business School · September 2027 intake · with the Hong Kong PhD Fellowship Scheme</span><span data-l="zh">经管学院 创新与信息管理博士 · 2027年9月入学 · 同时申请香港博士研究生奖学金计划（HKPFS）</span></p>
     <dl>
       <dt><span data-l="en">Letter deadline</span><span data-l="zh">推荐信截止</span></dt>
@@ -118,7 +126,7 @@ if(l!=='en'&&l!=='zh')l=/^zh/i.test(navigator.language||'')?'zh':'en';document.d
   </section>
 
   <section class="school">
-    <h2><span data-l="en">Carnegie Mellon University</span><span data-l="zh">卡内基梅隆大学（CMU）</span></h2>
+    <h3><span data-l="en">Carnegie Mellon University</span><span data-l="zh">卡内基梅隆大学（CMU）</span></h3>
     <p class="prog"><span data-l="en">PhD in Statistics, Department of Statistics &amp; Data Science · Fall 2027 intake</span><span data-l="zh">统计与数据科学系 统计学博士 · 2027年秋季入学</span></p>
     <dl>
       <dt><span data-l="en">Deadline (application &amp; letters)</span><span data-l="zh">截止（申请和推荐信）</span></dt>
@@ -133,7 +141,7 @@ if(l!=='en'&&l!=='zh')l=/^zh/i.test(navigator.language||'')?'zh':'en';document.d
   </section>
 
   <section class="school">
-    <h2><span data-l="en">University of Wisconsin–Madison</span><span data-l="zh">威斯康星大学麦迪逊分校</span></h2>
+    <h3><span data-l="en">University of Wisconsin–Madison</span><span data-l="zh">威斯康星大学麦迪逊分校</span></h3>
     <p class="prog"><span data-l="en">PhD in Statistics (Statistics option), Department of Statistics · Fall 2027 intake</span><span data-l="zh">统计系 统计学博士（统计方向） · 2027年秋季入学</span></p>
     <dl>
       <dt><span data-l="en">Application deadline</span><span data-l="zh">申请截止</span></dt>
@@ -148,7 +156,7 @@ if(l!=='en'&&l!=='zh')l=/^zh/i.test(navigator.language||'')?'zh':'en';document.d
   </section>
 
   <section class="school">
-    <h2><span data-l="en">The University of Texas at Austin</span><span data-l="zh">德克萨斯大学奥斯汀分校（UT Austin）</span></h2>
+    <h3><span data-l="en">The University of Texas at Austin</span><span data-l="zh">德克萨斯大学奥斯汀分校（UT Austin）</span></h3>
     <p class="prog"><span data-l="en">PhD in Statistics, Department of Statistics and Data Sciences · Fall 2027 intake</span><span data-l="zh">统计与数据科学系 统计学博士 · 2027年秋季入学</span></p>
     <dl>
       <dt><span data-l="en">Deadline (application &amp; letters)</span><span data-l="zh">截止（申请和推荐信）</span></dt>
@@ -163,7 +171,7 @@ if(l!=='en'&&l!=='zh')l=/^zh/i.test(navigator.language||'')?'zh':'en';document.d
   </section>
 
   <section class="school">
-    <h2><span data-l="en">Purdue University</span><span data-l="zh">普渡大学</span></h2>
+    <h3><span data-l="en">Purdue University</span><span data-l="zh">普渡大学</span></h3>
     <p class="prog"><span data-l="en">PhD in Statistics, Department of Statistics · Fall 2027 intake</span><span data-l="zh">统计系 统计学博士 · 2027年秋季入学</span></p>
     <dl>
       <dt><span data-l="en">Deadline (application &amp; letters)</span><span data-l="zh">截止（申请和推荐信）</span></dt>
@@ -178,7 +186,7 @@ if(l!=='en'&&l!=='zh')l=/^zh/i.test(navigator.language||'')?'zh':'en';document.d
   </section>
 
   <section class="school">
-    <h2><span data-l="en">Yale University</span><span data-l="zh">耶鲁大学</span></h2>
+    <h3><span data-l="en">Yale University</span><span data-l="zh">耶鲁大学</span></h3>
     <p class="prog"><span data-l="en">PhD in Statistics and Data Science, Graduate School of Arts and Sciences · Fall 2027 intake</span><span data-l="zh">统计与数据科学系博士（文理研究生院） · 2027年秋季入学</span></p>
     <dl>
       <dt><span data-l="en">Application deadline</span><span data-l="zh">申请截止</span></dt>
@@ -195,7 +203,7 @@ if(l!=='en'&&l!=='zh')l=/^zh/i.test(navigator.language||'')?'zh':'en';document.d
   </section>
 
   <section class="school">
-    <h2><span data-l="en">Stanford University</span><span data-l="zh">斯坦福大学</span></h2>
+    <h3><span data-l="en">Stanford University</span><span data-l="zh">斯坦福大学</span></h3>
     <p class="prog"><span data-l="en">PhD in Management Science and Engineering (MS&amp;E) · Autumn 2027 intake</span><span data-l="zh">管理科学与工程系（MS&amp;E）博士 · 2027年秋季入学</span></p>
     <dl>
       <dt><span data-l="en">Deadline (application &amp; letters)</span><span data-l="zh">截止（申请和推荐信）</span></dt>
@@ -209,8 +217,10 @@ if(l!=='en'&&l!=='zh')l=/^zh/i.test(navigator.language||'')?'zh':'en';document.d
     </ul>
   </section>
 
+  <h2 class="ddl"><span><span data-l="en">DDL · 2 Dec 2026</span><span data-l="zh">DDL · 2026年12月2日</span></span><span class="n"><span data-l="en">2 programmes</span><span data-l="zh">2 个项目</span></span></h2>
+
   <section class="school">
-    <h2><span data-l="en">UC San Diego</span><span data-l="zh">加州大学圣地亚哥分校（UCSD）</span></h2>
+    <h3><span data-l="en">UC San Diego</span><span data-l="zh">加州大学圣地亚哥分校（UCSD）</span></h3>
     <p class="prog"><span data-l="en">PhD in Data Science, Halıcıoğlu Data Science Institute (HDSI) · Fall 2027 intake</span><span data-l="zh">Halıcıoğlu 数据科学研究院（HDSI）数据科学博士 · 2027年秋季入学</span></p>
     <dl>
       <dt><span data-l="en">Deadline (application &amp; letters)</span><span data-l="zh">截止（申请和推荐信）</span></dt>
@@ -225,7 +235,7 @@ if(l!=='en'&&l!=='zh')l=/^zh/i.test(navigator.language||'')?'zh':'en';document.d
   </section>
 
   <section class="school">
-    <h2><span data-l="en">UC San Diego</span><span data-l="zh">加州大学圣地亚哥分校（UCSD）</span></h2>
+    <h3><span data-l="en">UC San Diego</span><span data-l="zh">加州大学圣地亚哥分校（UCSD）</span></h3>
     <p class="prog"><span data-l="en">PhD in Mathematics (Statistics), Department of Mathematics · Fall 2027 intake</span><span data-l="zh">数学系 数学博士（统计方向） · 2027年秋季入学</span></p>
     <dl>
       <dt><span data-l="en">Deadline (application &amp; letters)</span><span data-l="zh">截止（申请和推荐信）</span></dt>
@@ -239,8 +249,10 @@ if(l!=='en'&&l!=='zh')l=/^zh/i.test(navigator.language||'')?'zh':'en';document.d
     </ul>
   </section>
 
+  <h2 class="ddl"><span><span data-l="en">DDL · 3 Dec 2026</span><span data-l="zh">DDL · 2026年12月3日</span></span><span class="n"><span data-l="en">1 programme</span><span data-l="zh">1 个项目</span></span></h2>
+
   <section class="school">
-    <h2><span data-l="en">New York University</span><span data-l="zh">纽约大学（NYU）</span></h2>
+    <h3><span data-l="en">New York University</span><span data-l="zh">纽约大学（NYU）</span></h3>
     <p class="prog"><span data-l="en">PhD in Data Science, Center for Data Science (CDS) · Fall 2027 intake</span><span data-l="zh">数据科学中心（CDS） 数据科学博士 · 2027年秋季入学</span></p>
     <dl>
       <dt><span data-l="en">Deadline (application &amp; letters)</span><span data-l="zh">截止（申请和推荐信）</span></dt>
@@ -254,8 +266,10 @@ if(l!=='en'&&l!=='zh')l=/^zh/i.test(navigator.language||'')?'zh':'en';document.d
     </ul>
   </section>
 
+  <h2 class="ddl"><span><span data-l="en">DDL · 6 Dec 2026</span><span data-l="zh">DDL · 2026年12月6日</span></span><span class="n"><span data-l="en">1 programme</span><span data-l="zh">1 个项目</span></span></h2>
+
   <section class="school">
-    <h2><span data-l="en">University of Toronto</span><span data-l="zh">多伦多大学</span></h2>
+    <h3><span data-l="en">University of Toronto</span><span data-l="zh">多伦多大学</span></h3>
     <p class="prog"><span data-l="en">PhD in Statistics, Department of Statistical Sciences · Fall 2027 intake</span><span data-l="zh">统计科学系 统计学博士 · 2027年秋季入学</span></p>
     <dl>
       <dt><span data-l="en">Letter deadline</span><span data-l="zh">推荐信截止</span></dt>
@@ -270,8 +284,10 @@ if(l!=='en'&&l!=='zh')l=/^zh/i.test(navigator.language||'')?'zh':'en';document.d
     </ul>
   </section>
 
+  <h2 class="ddl"><span><span data-l="en">DDL · 10 Dec 2026</span><span data-l="zh">DDL · 2026年12月10日</span></span><span class="n"><span data-l="en">1 programme</span><span data-l="zh">1 个项目</span></span></h2>
+
   <section class="school">
-    <h2><span data-l="en">University of California, Los Angeles</span><span data-l="zh">加州大学洛杉矶分校（UCLA）</span></h2>
+    <h3><span data-l="en">University of California, Los Angeles</span><span data-l="zh">加州大学洛杉矶分校（UCLA）</span></h3>
     <p class="prog"><span data-l="en">PhD in Statistics, Department of Statistics and Data Science · Fall 2027 intake</span><span data-l="zh">统计与数据科学系 统计学博士 · 2027年秋季入学</span></p>
     <dl>
       <dt><span data-l="en">Deadline (application &amp; letters)</span><span data-l="zh">截止（申请和推荐信）</span></dt>
@@ -285,8 +301,10 @@ if(l!=='en'&&l!=='zh')l=/^zh/i.test(navigator.language||'')?'zh':'en';document.d
     </ul>
   </section>
 
+  <h2 class="ddl"><span><span data-l="en">DDL · 15 Dec 2026</span><span data-l="zh">DDL · 2026年12月15日</span></span><span class="n"><span data-l="en">2 programmes</span><span data-l="zh">2 个项目</span></span></h2>
+
   <section class="school">
-    <h2><span data-l="en">The University of Texas at Austin</span><span data-l="zh">德克萨斯大学奥斯汀分校（UT Austin）</span></h2>
+    <h3><span data-l="en">The University of Texas at Austin</span><span data-l="zh">德克萨斯大学奥斯汀分校（UT Austin）</span></h3>
     <p class="prog"><span data-l="en">PhD in Information, Risk, and Operations Management (IROM), McCombs School of Business · Fall 2027 intake</span><span data-l="zh">McCombs 商学院 信息、风险与运营管理（IROM）博士 · 2027年秋季入学</span></p>
     <dl>
       <dt><span data-l="en">Application deadline</span><span data-l="zh">申请截止</span></dt>
@@ -301,7 +319,7 @@ if(l!=='en'&&l!=='zh')l=/^zh/i.test(navigator.language||'')?'zh':'en';document.d
   </section>
 
   <section class="school">
-    <h2><span data-l="en">University of Illinois Urbana-Champaign</span><span data-l="zh">伊利诺伊大学厄巴纳-香槟分校（UIUC）</span></h2>
+    <h3><span data-l="en">University of Illinois Urbana-Champaign</span><span data-l="zh">伊利诺伊大学厄巴纳-香槟分校（UIUC）</span></h3>
     <p class="prog"><span data-l="en">PhD in Statistics, Department of Statistics · Fall 2027 intake</span><span data-l="zh">统计系 统计学博士 · 2027年秋季入学</span></p>
     <dl>
       <dt><span data-l="en">Application deadline</span><span data-l="zh">申请截止</span></dt>
